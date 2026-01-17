@@ -12,7 +12,7 @@ class MainApplication {
 
     async execute() {
         try {
-            console.log('🚀 Запуск приложения для обработки товаров');
+            console.log(' Запуск приложения для обработки товаров');
             console.log('='.repeat(50));
             
             await this.allFetcher.fetchAllProducts();
@@ -31,3 +31,4 @@ class MainApplication {
 const app = new MainApplication();
 
 app.execute();
+
