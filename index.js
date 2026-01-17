@@ -19,14 +19,15 @@ class MainApplication {
             await this.pageFetcher.fetchProductsByPages();
             await this.transformer.transformProductData();
             
-            console.log('\n✅ Все операции успешно завершены!');
+            console.log('\n Все операции успешно завершены!');
             
         } catch (error) {
-            console.error('❌ Критическая ошибка:', error.message);
+            console.error(' Критическая ошибка:', error.message);
         }
     }
 }
 
 
 const app = new MainApplication();
+
 app.execute();
